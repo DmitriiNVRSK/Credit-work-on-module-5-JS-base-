@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing a library of books</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Managing a library of books</h1>
+    <form id="book-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="author" required>
+        <input type="number" id="year" placeholder="year" required>
+        <input type="text" id="genre" placeholder="genre" required>
+        <select id="status">
+            <option value="Not read">Not read</option>
+            <option value="It reads">It reads</option>
+        </select>
+        <button type="submit">Add a book</button>
+    </form>
+    <div>
+        <h2>List of books</h2>
+        <ul id="book-list"></ul>
+        <p id="book-count">Number of books: 0</p>
+        <button id="clear-books">Delete all books</button>
+        <button id="refresh-page">Refresh page</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
